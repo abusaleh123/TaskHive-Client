@@ -7,7 +7,8 @@ import { ThemeContext } from "../context/ContextApi";
 import fakeUser from '../assets/fakeuser.webp'
 import Swal from "sweetalert2";
 import { signOut } from "firebase/auth";
-import { auth } from "../context/firebase.config";
+import auth from "../firebase.init";
+
 
 const Navbar = () => {
     const {user} = useContext(ThemeContext)

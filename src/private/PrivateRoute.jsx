@@ -9,7 +9,7 @@ const PrivateRoute = ({children}) => {
     if (loading) {
         return <div className="h-screen flex flex-col items-center justify-center">
             <img className="w-8 md:w-15 xl:w-18" src={logo} alt="logo" />
-            <h2 className="text-lg md:text-2xl font-bold py-2">Orbitask</h2>
+            <h2 className="text-lg md:text-2xl font-bold py-2">TaskHive</h2>
 
             <div className="text-center absolute bottom-5">
                 <h2 className="font-bold ">From</h2>

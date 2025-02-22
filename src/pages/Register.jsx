@@ -5,7 +5,7 @@ import googlrPng from "../assets/google.png";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ContextApi";
 import { updateProfile } from "firebase/auth";
-import { auth } from "../context/firebase.config";
+import auth from "../firebase.init";
 import Swal from "sweetalert2";
 const Register = () => {
   const {signUp, googleLogin} = useContext(ThemeContext)
