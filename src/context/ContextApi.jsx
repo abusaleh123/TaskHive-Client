@@ -27,7 +27,7 @@ const ContextApi = ({children}) => {
             setUser(currentUser)
             setLoading(false)
             const newUser = {name: currentUser.displayName, email: currentUser.email}
-           const response = await axios.post('http://localhost:5000/add-user', newUser)
+           const response = await axios.post('https://taskhive-server.onrender.com/add-user', newUser)
            console.log(response.data)
         })
         return () => {

@@ -9,7 +9,7 @@ import { PiDotsSixVerticalBold } from "react-icons/pi";
 import Modal from "@mui/material/Modal";
 import { ThemeContext } from "../context/ContextApi";
 
-const socket = io("https://task-management-server-7lv2.onrender.com", {
+const socket = io("https://taskhive-server.onrender.com", {
   transports: ["websocket", "polling"],
   withCredentials: true
 });
@@ -27,7 +27,7 @@ export default function DragBoard() {
 
 
   const fetchTasks = () => {
-    axios.get(`https://task-management-server-7lv2.onrender.com/tasks?email=${user.email}`)
+    axios.get(`https://taskhive-server.onrender.com/tasks?email=${user.email}`)
       .then((res) => {
         res.data.sort((a, b) => a.order - b.order);
         setTasks(res.data);
@@ -54,7 +54,7 @@ export default function DragBoard() {
 
       setTasks(updatedTasks);
 
-      await fetch("https://task-management-server-7lv2.onrender.com/update-order", {
+      await fetch("https://taskhive-server.onrender.com/update-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -71,7 +71,7 @@ export default function DragBoard() {
 
       setTasks(updatedTasks);
 
-      await fetch("https://task-management-server-7lv2.onrender.com/update-task", {
+      await fetch("https://taskhive-server.onrender.com/update-task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -93,7 +93,7 @@ export default function DragBoard() {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://task-management-server-7lv2.onrender.com/task?id=${id}`).then((res) => {
+        axios.delete(`https://taskhive-server.onrender.com/task?id=${id}`).then((res) => {
           if (res.data.deletedCount) {
             Swal.fire({
               title: "Deleted!",
@@ -111,7 +111,7 @@ export default function DragBoard() {
     const title = e.target.title.value;
     const desc = e.target.desc.value;
     const task = { title, description: desc, id };
-    axios.patch("https://task-management-server-7lv2.onrender.com/task", task).then((res) => {
+    axios.patch("https://taskhive-server.onrender.com/task", task).then((res) => {
       if (res.data.modifiedCount) {
         e.target.reset();
         setOpen(false);
