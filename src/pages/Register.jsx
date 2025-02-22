@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import signupImage from "../assets/signup.jpg";
+import signupImage from "../assets//ivan-shilov-_rWC40pYIwk-unsplash.jpg";
 import Button from "../components/Button";
 import googlrPng from "../assets/google.png";
 import { useContext } from "react";
