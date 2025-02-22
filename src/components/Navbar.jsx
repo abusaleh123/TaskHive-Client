@@ -40,7 +40,7 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-400/10 border-gray-400/20 border-b">
             <section className="w-11/12 mx-auto flex items-center justify-between h-12">
-            <Link to='/' className="font-bold text-xl">Orbitask</Link>
+            <Link to='/' className="font-bold text-xl">TaskHive</Link>
             <div className="flex items-center gap-2">
             <button className="cursor-pointer rounded-full text-sm md:text-base font-bold p-1 hover:bg-gray-400/20 duration-200" onClick={handleLogout}><IoMdLogOut className="text-xl"/></button>
             <ThemeButton></ThemeButton>

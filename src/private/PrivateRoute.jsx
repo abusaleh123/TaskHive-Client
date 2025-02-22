@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ContextApi";
 import logo from '../assets/logo.png'
-import imrandev from '../assets/imran-logo.png'
+
 import { Navigate } from "react-router-dom";
 const PrivateRoute = ({children}) => {
     const {user, loading} = useContext(ThemeContext)
@@ -13,7 +13,7 @@ const PrivateRoute = ({children}) => {
 
             <div className="text-center absolute bottom-5">
                 <h2 className="font-bold ">From</h2>
-                <h2 className="flex -mt-1 items-center text-purple-700 font-bold"><img className="w-10 -mr-2" src={imrandev} alt="" /> Imran Developer</h2>
+                <h2 className="flex -mt-1 items-center text-purple-700 font-bold"><img className="w-10 -mr-2"  alt="" /> Abu Saleh Noor </h2>
             </div>
         </div>
     }
