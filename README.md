@@ -1,11 +1,11 @@
-# Task Management Application (Orbitask)
+# Task Management Application (TaskHive)
 
 ## 📝 Short Description
 A powerful and intuitive task management application designed to help users organize, track, and collaborate on tasks efficiently. It features a sleek UI, real-time updates, and seamless drag-and-drop functionality.
 
 ## 🔗 Live Links
-- **Website:** [https://orbitask-89368.web.app/]
-- **Demo:** [https://orbitask-89368.web.app/]
+- **Website:** [https://task-management-ee2d6.web.app/]
+- **Demo:** [https://task-management-ee2d6.firebaseapp.com]
 
 ## 🚀 Technologies Used
 The application is built using modern web technologies and libraries to ensure a smooth and responsive experience.
